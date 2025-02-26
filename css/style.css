@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.woff2') format('woff2'),
+        url('../fonts/Lato-Regular.woff') format('woff'),
+        url('../fonts/Lato-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('../fonts/DancingScript-SemiBold.woff2') format('woff2'),
+        url('../fonts/DancingScript-SemiBold.woff') format('woff'),
+        url('../fonts/DancingScript-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --width_xl: 1000px;
+    --primary_color: #053617;
+    /* --primary_color: pink; */
+}
+
+header img {
+    width: 100%;
+    display: block;
+}
+
+div img {
+    display: block;
+}
+
+section > div {
+    display: flex;
+}
+
+.desktop_xl {
+    margin: 0 auto;
+    width: var(--width_xl);
+}
+
+.fondo_oscuro {
+    background-color: var(--primary_color);
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Dancing Script', serif;
+  }
+
+  h1 {
+    color: white;
+    position: absolute;
+    right: 8vw;
+    top: 8vw;
+    font-size: 8vw;
+  }
+
+  nav {
+    position: sticky;
+    top: 0px;
+  }
+
