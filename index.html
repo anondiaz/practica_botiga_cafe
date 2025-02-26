@@ -79,10 +79,20 @@
       <section>
         <div class="desktop_xl">
           <div>
-            <img
-              src="assets/Basic_heart_latte_art.mp4"
-              alt="Video llenando taza de cafe"
-            />
+            <!-- <video src="assets/Basic_heart_latte_art.mp4" autoplay muted loop></video> -->
+            <!-- formatos de video disponibles
+              mkv < no
+              ogg < si
+              mp4 < si
+              webm < si -->
+            <video autoplay muted loop>
+              <source
+                src="assets/Basic_heart_latte_art.webm"
+                type="video/webm"
+              />
+              <source src="assets/Basic_heart_latte_art.mp4" type="video/mp4" />
+              Formato de video no reconocido
+            </video>
           </div>
           <div class="texto_derecha">
             <h2>Prepara un delicioso cafe en casa</h2>
@@ -115,38 +125,69 @@
         </div>
       </section>
       <section>
-        <div>
-          <!-- <div><h2>El cafe no puede faltar en un buen encuentro</h2></div> -->
+        <h2>Los clientes opinan</h2>
+        <div class="desktop_xl opiniones">
+          <!-- div*3>q+cite esto nos crea tres div y dentro de cada uno una q y una cite -->
           <div>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
-              quia porro aut sint perspiciatis quaerat, impedit ducimus, culpa
-              tempore distinctio quis harum, et voluptas repellat quae natus!
-              Nisi, in accusamus?
-            </p>
-            <h3>Juli Cesar</h3>
+            <q>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              suscipit voluptates quod, impedit sed numquam.
+            </q>
+            <cite>Juli Cesar</cite>
           </div>
           <div>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
-              quia porro aut sint perspiciatis quaerat, impedit ducimus, culpa
-              tempore distinctio quis harum, et voluptas repellat quae natus!
-              Nisi, in accusamus?
-            </p>
-            <h3>Livia</h3>
+            <q>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Quibusdam obcaecati nisi nihil quis saepe tempore impedit animi
+              amet ipsa a?
+            </q>
+            <cite>Livia</cite>
           </div>
           <div>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
-              quia porro aut sint perspiciatis quaerat, impedit ducimus, culpa
-              tempore distinctio quis harum, et voluptas repellat quae natus!
-              Nisi, in accusamus?
-            </p>
-            <h3>Octavi August</h3>
+            <q>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+              hic.
+            </q>
+            <cite>Octavi August</cite>
           </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="fondo_oscuro">
+      <div class="desktop_xl pie_pagina">
+        <div>
+          <h3>Contacto</h3>
+          <p>info@cafesdelmon.com</p>
+          <div class="logos_pie">
+            <div><img src="logos/facebook.png" alt="Facebook" /></div>
+            <div><img src="logos/twitter.png" alt="Twitter" /></div>
+            <div><img src="logos/instagram.png" alt="Instagram" /></div>
+          </div>
+        </div>
+        <div>
+          <h3>Enlaces utiles</h3>
+          <p>Noticias de prensa</p>
+          <p>Nuestros productos</p>
+          <p>Planes para empresas</p>
+          <p>Afiliados</p>
+        </div>
+        <div>
+          <h3>Comprar</h3>
+          <p>Particulares</p>
+          <p>Empresas</p>
+          <p>Suscripciones</p>
+        </div>
+        <div>
+          <h3>Conocer el café</h3>
+          <p>Videos</p>
+        </div>
+        <div>
+          <h3>Ayuda</h3>
+          <p>Preguntas frecuentes</p>
+          <p>Devoluciones</p>
+          <p>Servicio tecnico</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
