@@ -134,11 +134,11 @@ section > h2 {
     font-size: 1.25rem;
     width: 100%;
     display: block;
+    font-style: italic;
   }
   cite {
     font-size: 1.25rem;
     color: red;
-    font-style: italic;
     text-align: right;
   }
 }
