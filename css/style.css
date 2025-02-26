@@ -1,72 +1,118 @@
 @font-face {
-    font-family: 'Lato';
-    src: url('../fonts/Lato-Regular.woff2') format('woff2'),
-        url('../fonts/Lato-Regular.woff') format('woff'),
-        url('../fonts/Lato-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.woff2") format("woff2"),
+    url("../fonts/Lato-Regular.woff") format("woff"),
+    url("../fonts/Lato-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Dancing Script';
-    src: url('../fonts/DancingScript-SemiBold.woff2') format('woff2'),
-        url('../fonts/DancingScript-SemiBold.woff') format('woff'),
-        url('../fonts/DancingScript-SemiBold.ttf');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Dancing Script";
+  src: url("../fonts/DancingScript-SemiBold.woff2") format("woff2"),
+    url("../fonts/DancingScript-SemiBold.woff") format("woff"),
+    url("../fonts/DancingScript-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Lato, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato, Arial, Helvetica, sans-serif;
 }
 
 :root {
-    --width_xl: 1000px;
-    --primary_color: #053617;
-    /* --primary_color: pink; */
+  --width_xl: 1000px;
+  --primary_color: #053617;
+  --secondary_color: white;
+  --enfasis_color: yellow;
 }
 
 header img {
-    width: 100%;
-    display: block;
-}
-
-div img {
-    display: block;
+  width: 100%;
+  display: block;
 }
 
 section > div {
-    display: flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+section > div > div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  img {
+    width: 100%;
+    /* display: block; */
+  }
+  p {
+    font-size: 1.25rem;
+  }
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .desktop_xl {
-    margin: 0 auto;
-    width: var(--width_xl);
+  margin: 0 auto;
+  max-width: var(--width_xl);
 }
 
 .fondo_oscuro {
-    background-color: var(--primary_color);
+  background-color: var(--primary_color);
+  color: var(--secondary_color);
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Dancing Script', serif;
-  }
+.texto_derecha {
+  text-align: right;
+  padding-left: 4rem;
+}
 
-  h1 {
-    color: white;
-    position: absolute;
-    right: 8vw;
-    top: 8vw;
-    font-size: 8vw;
-  }
+.texto_izquierda {
+  padding-right: 4rem;
+}
 
-  nav {
-    position: sticky;
-    top: 0px;
-  }
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Dancing Script", serif;
+}
 
+h1 {
+  color: var(--secondary_color);
+  position: absolute;
+  right: 10vw;
+  top: 9vw;
+  font-size: 8vw;
+}
+
+nav {
+  position: sticky;
+  top: 0px;
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  li {
+    list-style: none;
+    padding: 1rem 0;
+  }
+  a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: inherit;
+    /* padding: 5px 0; */
+    &:hover {
+      border-top: 3px solid var(--enfasis_color);
+      color: var(--enfasis_color);
+    }
+  }
+}
